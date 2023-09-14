@@ -75,6 +75,7 @@ The goal is to create a system using an Arduino Uno that displays a count from 0
 ## Simulation
 
 Platform: [Tinkercad.com](https://www.tinkercad.com/).
+Watch the simulation video here[here](https://youtu.be/u1XYF1FV1Q8).
 
 ## 🫂 Authors
 
