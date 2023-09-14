@@ -27,14 +27,43 @@ The goal is to create a system using an Arduino Uno that displays a count from 0
 **2. Programming Steps:**
    - In your Arduino code:
 
-     - 🚀 Initialize the display.
-     - 🛠️ Configure the button for input.
+     - 🚀 Initialize the display and Configure the button for input.
      - 📊 Define a count variable (initially set to 0).
      - ⏰ Set up a timer for 1-second updates.
      - ✅ On button press, increment the count and display it.
      - 🔄 Update the display with the count every second.
      - 🔄 Reset the count to 0 when it reaches 7.
      - 🔄 Maintain a continuous loop for button and timer events.
+    
+   **Solution:**
+   ```c
+   int main(void){
+     DDRD = 0xF8;
+     DDRB = 0x07;
+     unsigned int counter = 0;
+     
+     zero(); // start display with zero;
+     
+     void (*display_num[8])() = {zero, one, two, three, four, five, six, seven};
+   
+     while(1){
+       if(PIND & 0x04){ continue; } // the button was not pressed
+       
+       counter++;
+       
+       if (counter <= 7) {
+         display_num[counter]();
+       } else {
+         zero();
+         counter = 0;
+       }
+       
+       _delay_ms(1000);
+     }
+     
+     return 0;
+   }
+   ```
 
 **3. Compilation and Uploading:**
    - Use the Arduino IDE to compile and upload your code to the Arduino Uno.
