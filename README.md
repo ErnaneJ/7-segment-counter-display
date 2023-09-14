@@ -75,3 +75,10 @@ The goal is to create a system using an Arduino Uno that displays a count from 0
 ## Simulation
 
 Platform: [Tinkercad.com](https://www.tinkercad.com/).
+
+## 🫂 Authors
+
+- [Ernane Ferreira](https://github.com/ernanej)
+- [Quelita Mirian](https://github.com/quelita2)
+- [Thiago Lopes](https://github.com/thiagonasmto)
+
