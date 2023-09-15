@@ -81,6 +81,6 @@ Watch the simulation video [here](https://youtu.be/u1XYF1FV1Q8).
 ## 🫂 Authors
 
 - [Ernane Ferreira](https://github.com/ernanej)
-- [Quelita Mirian](https://github.com/quelita2)
+- [Quelita Míriam](https://github.com/quelita2)
 - [Thiago Lopes](https://github.com/thiagonasmto)
 
